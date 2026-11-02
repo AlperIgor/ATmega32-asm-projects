@@ -1,0 +1,21 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-300,-80" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="AssemblerApplication5.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-80,-68" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Rail" CircId="Rail-9" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-352,-28" rotation="90" hflip="1" vflip="1" label="Rail-9" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-32,32" rotation="0" hflip="1" vflip="1" label="Ground-10" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-11" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-144,-68" rotation="0" hflip="1" vflip="1" label="Resistor-11" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="50 Ω" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Rail-9-outnod" endpinid="mega32-1-RST" pointList="-352,-12,-352,-8,-308,-8" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="mega32-1-PORTA0" endpinid="Resistor-11-lPin" pointList="-244,-72,-160,-72,-160,-68" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Resistor-11-rPin" endpinid="Led-2-lPin" pointList="-128,-68,-96,-68" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Led-2-rPin" endpinid="Ground-10-Gnd" pointList="-64,-68,-32,-68,-32,16" />
+
+</circuit>
